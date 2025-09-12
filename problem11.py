@@ -41,7 +41,7 @@ def horizontally(grid):
             maximum = max(product,maximum)
     return maximum
 
-print(horizontally(newgrid))
+# print(horizontally(newgrid))
 
 def vertically(grid):
     maximum = 1
@@ -53,7 +53,7 @@ def vertically(grid):
             maximum = max(product,maximum)
     return maximum 
 
-print(vertically(newgrid))
+# print(vertically(newgrid))
 
 def diagonally(grid):
     maximum = 1
@@ -65,5 +65,13 @@ def diagonally(grid):
             maximum = max(product,maximum)
     return maximum 
 
-print(diagonally(newgrid))
+# print(diagonally(newgrid))
 
+def findMax():
+    max_ver = vertically(newgrid)
+    max_hor = horizontally(newgrid)
+    max_dia = diagonally(newgrid)
+
+    print(max(max_dia, max_hor, max_ver))
+
+findMax()
