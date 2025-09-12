@@ -55,5 +55,15 @@ def vertically(grid):
 
 print(vertically(newgrid))
 
-def diagonally():
-    return
+def diagonally(grid):
+    maximum = 1
+    for row  in range(3,20):
+        for col in range(17):
+            product = 1
+            for i in range(4):
+                product *= int(grid[row - i][col + i])
+            maximum = max(product,maximum)
+    return maximum 
+
+print(diagonally(newgrid))
+
