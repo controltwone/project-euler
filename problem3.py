@@ -1,3 +1,4 @@
+from itertools import cycle
 from math import sqrt
 
 def printFactor(x):
@@ -9,7 +10,8 @@ def printFactor(x):
 
 print(printFactor(169))
 
-def primeFactors(x):
-    for i in x:
-        for a in range(x):
-            dd
+# def primeFactors(x):
+#     for i in x:
+#         for a in range(x):
+            
+print(cycle('abcd'))
