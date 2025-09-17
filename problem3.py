@@ -1,17 +1,17 @@
 from itertools import cycle
+import itertools
 from math import sqrt
 
-def printFactor(x):
-    factors = []
-    for x in range(1, int(sqrt(x))+1):
-        factors.append(x)
+def prime_generator():
+    primes = []
+    for candidate in itertools.count(2):
+        for prime in primes:
+            if candidate % prime == 0:
+                break
+        else:
+            yield candidate
+            primes.append(candidate)
 
-    return factors
-
-print(printFactor(169))
-
-# def primeFactors(x):
-#     for i in x:
-#         for a in range(x):
-            
-print(cycle('abcd'))
+gen = prime_generator()
+for _ in range(10):
+    print(next(gen))
