@@ -24,7 +24,7 @@ i = 1 #şuanda 1.sayıdayız.
 count = 0
 while size < k+1:
     
-    i += size - 1  # şuanda merkezdeki 1in değeri
+    i += size - 1  # şuanda 3 ün değeri
     sum += i
     count += 1
     if count == 4: # for 4 edge numbers in each square
