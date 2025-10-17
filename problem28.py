@@ -27,6 +27,7 @@ while size < k+1:
     i += size - 1  # şuanda 3 ün değeri
     sum += i
     count += 1
+    
     if count == 4: # for 4 edge numbers in each square
 
         size += 2
