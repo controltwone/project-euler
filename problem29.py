@@ -10,5 +10,5 @@ for base in a:
 
 print(len(numbers))
 
-numberSet = list(set(numbers))
+numberSet = list(set(numbers)) # burda distinct değerler kalması için önce list set veritipine dönüştürüldü.
 print(len(numberSet))
