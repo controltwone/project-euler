@@ -1,6 +1,6 @@
 num = 58533231123123
 
-binary_num = bin(num) 
+binary_num = bin(num) #onluk tabandan 2lik tabana çevirir.
 
 print(binary_num[2:])
 
