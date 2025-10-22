@@ -8,10 +8,10 @@ answer = 200
 
     
 
-nums = [1,2,5]
-for x in nums:
-    for y in range(5):
-
+# nums = [1,2,5]
+# for x in nums:
+#     for y in range(5):
+#             return
 
 
 
