@@ -16,5 +16,17 @@ triangle ="""75
 
 trianglee = [i.split() for i in triangle.split("\n")]
 triangle1 = [[int(y) for y in x]for x in trianglee]
-print(triangle1)
+# print(triangle1)
 
+def botton_to_top():
+
+    for i in reversed(range(len(triangle1)-1)):
+        row = triangle1[i]
+
+        for j in range(len(row)):
+
+            row[j] += max(triangle1[i+1][j], triangle1[i+1][j+1])
+    return triangle1[0][0]
+
+
+print(botton_to_top())
