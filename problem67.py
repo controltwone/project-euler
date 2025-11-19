@@ -34,3 +34,4 @@ def solution_from_botton_to_top():
 
 print(solution_from_botton_to_top())
 
+# Python’da liste atama HER ZAMAN referans aktarır, kopya oluşturmaz.
