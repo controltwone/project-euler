@@ -18,6 +18,6 @@ def sol():
         if num > max_sol:
             p = x
             max_sol = num
-    return max_sol, p
+    return max_sol
 
 print(sol())
