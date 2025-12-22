@@ -10,7 +10,7 @@ def square_root(num):
 
     return Fraction(1, 2 + square_root(num - 1))
 
-
+git 
 def sol():
     count = 0
     for x in range(1,1001):
